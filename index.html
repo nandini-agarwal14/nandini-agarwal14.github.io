@@ -31,18 +31,6 @@
         }
         .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; background: #e2e8f0; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 2px; }
-        .skill-card {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.75rem; 
-            padding: 1.25rem;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-            border-color: #0ea5e9;
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans selection:bg-sky-100">
@@ -55,7 +43,6 @@
             <div class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
                 <a href="#about" class="hover:text-sky-600 transition-colors">ABOUT</a>
                 <a href="#experience" class="hover:text-sky-600 transition-colors">EXPERIENCE</a>
-                <a href="#education" class="hover:text-sky-600 transition-colors">EDUCATION</a>
                 <a href="#projects" class="hover:text-sky-600 transition-colors">RESEARCH</a>
                 <a href="#impact" class="hover:text-sky-600 transition-colors">IMPACT</a>
                 <a href="#skills" class="hover:text-sky-600 transition-colors">SKILLS</a>
@@ -123,7 +110,7 @@
     <section id="projects" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-slate-900 mb-2">Policy & Research Projects</h2>
-            <p class="text-slate-500 mb-12">Comparative analysis and evidence-based frameworks for social mobility.</p>
+            <p class="text-slate-500 mb-12">Evidence-based frameworks and econometric analysis for social impact.</p>
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8" id="projects-container"></div>
         </div>
     </section>
@@ -202,15 +189,38 @@
             ],
             projects: [
                 {
-                    title: "Sarvodaya Shakti",
+                    title: "Women’s Health Gaps in Developed Economies",
+                    role: "Independent Policy Researcher",
+                    period: "December 2025 - Present",
+                    desc: "Analyzing cross-country health and gender data to examine Polycystic Ovary Syndrome (PCOS) underdiagnosis.",
+                    details: [
+                        "Examining prevalence gaps in US, UK, Australia, and Sweden using indicators such as health expenditure, UHC index, Gender Inequality Index, and FLFP.",
+                        "Challenging assumptions that economic development ensures women’s health by identifying systemic gender bias and diagnostic delays.",
+                        "Developing evidence-based policy insights to inform gender-sensitive health priorities and improved diagnostic frameworks.",
+                        "Focusing on advancing women’s health equity globally through targeted structural interventions."
+                    ]
+                },
+                {
+                    title: "FLFPR in India",
+                    role: "Project Lead",
+                    period: "January 2025 – May 2025",
+                    desc: "Econometric analysis of female labour force participation using World Bank time-series data (2008–2023).",
+                    details: [
+                        "Performed OLS regression to evaluate the impact of economic growth, female education, and urbanization on participation rates.",
+                        "Assessed model robustness by examining coefficient significance, adjusted R², and potential endogeneity.",
+                        "Developed actionable recommendations for education-to-employment alignment and efficient healthcare investment.",
+                        "Informed strategies for inclusive growth and labor market reforms through credible macroeconomic interpretation."
+                    ]
+                },
+                {
+                    title: "Upliftment for All",
                     role: "Public Policy Architect",
                     period: "Sept 2024 - October 2024",
                     desc: "Designed a public policy framework for the upliftment of marginalized communities.",
                     details: [
-                        "Addressed economic disparity, racial discrimination, and gender inequality through strategic policy design.",
-                        "Recommended strategic initiatives to expand educational opportunities and empower women via vocational training.",
-                        "Promoted social entrepreneurship to foster community development and economic self-sufficiency.",
-                        "Enhanced community welfare through inclusive policies and the promotion of economic independence."
+                        "Addressed economic disparity and racial discrimination through strategic policy design.",
+                        "Recommended initiatives to expand educational opportunities and empower women via vocational training.",
+                        "Promoted social entrepreneurship to foster community development and self-sufficiency."
                     ]
                 },
                 {
@@ -219,34 +229,31 @@
                     period: "June 2024 - Oct 2024",
                     desc: "Comprehensive study on the 'Challenges faced by middle-income families in India'.",
                     details: [
-                        "Analyzed challenges across Housing, Healthcare, Employment, and Financial access for working families.",
-                        "Proposed six policy reforms, including tax benefits and educational loans, to enhance economic stability.",
-                        "Focused on improving access to essential services and securing the financial future of urban families.",
-                        "Evaluated financial incentives aimed at increasing equitable service access."
+                        "Analyzed challenges across Housing, Healthcare, Employment, and Financial access.",
+                        "Proposed six policy reforms, including tax benefits and educational loans.",
+                        "Focused on securing the financial future of urban working families."
                     ]
                 },
                 {
-                    title: "Education Models: Traditional vs Homeschooling",
+                    title: "Traditional vs Homeschooling",
                     role: "Project Lead & Author",
                     period: "July 2024 - Sep 2024",
-                    desc: "In-depth research analysis comparing schooling systems.",
+                    desc: "In-depth research analysis comparing schooling systems and outcomes.",
                     details: [
-                        "Evaluated benefits and drawbacks regarding accessibility, quality, and outcomes in both models.",
-                        "Explored personalized learning and flexibility in homeschooling while considering socialization limitations.",
-                        "Assessed how these models are reshaping the future of education and the potential for hybrid solutions.",
-                        "Researched resource availability constraints for non-traditional education models."
+                        "Evaluated benefits regarding accessibility and quality in both models.",
+                        "Explored personalized learning flexibility and socialization limitations.",
+                        "Assessed potential for hybrid solutions to address evolving student needs."
                     ]
                 },
                 {
                     title: "Urbanization & Social Mobility",
                     role: "Lead Researcher",
                     period: "Aug 2023 - Oct 2023",
-                    desc: "Comparative study on urban policy and infrastructure in Uganda and Singapore.",
+                    desc: "Comparative study on urban policy in Uganda and Singapore.",
                     details: [
-                        "Assessed the effects of urban planning on educational and employment mobility across two distinct regions.",
-                        "Analyzed socio-economic data to identify patterns and disparities in upward mobility.",
-                        "Evaluated the role of infrastructure development in mitigating or exacerbating urban inequalities.",
-                        "Provided actionable recommendations for inclusive and sustainable urban planning to policymakers."
+                        "Assessed urban planning effects on educational and employment mobility.",
+                        "Analyzed socio-economic data to identify patterns in upward mobility.",
+                        "Provided actionable recommendations for inclusive and sustainable urban planning."
                     ]
                 }
             ],
@@ -254,7 +261,7 @@
                 { title: "SDG Goals Awareness", desc: "Led dialogue with 60+ students at a government school to raise awareness about SDG Goals." },
                 { title: "Crisis Management", desc: "Coordinated volunteer teams and supply logistics (food/medical) during the Delhi floods." },
                 { title: "Digital Integration", desc: "Integrated local shops into Google Maps to enhance visibility and community growth." },
-                { title: "Community Outreach", desc: "Organized and led a donation drive for a government blind school, providing essential supplies and support." },
+                { title: "Community Outreach", desc: "Organized a donation drive for a government blind school, providing essential supplies and support." },
                 { title: "Mental Health Advocacy", desc: "Directed a short film exploring mental health challenges to foster empathy and awareness through storytelling." }
             ],
             skills: [
@@ -350,7 +357,7 @@
                 });
             }
 
-            // Initialize Icons
+            // Initialize Lucide Icons
             if (window.lucide) {
                 lucide.createIcons();
             }
